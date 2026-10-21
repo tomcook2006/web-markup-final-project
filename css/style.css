@@ -1,0 +1,69 @@
+*{
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+body{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #deec46;
+	background-color: #2a2a2a;
+}
+
+h1, h2, h3{
+	font-family: "Racing Sans One", Arial, sans-serif; 
+	font-weight: 400; 
+	line-height: 1.2;
+	color: #deec46; 
+}
+
+
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+.site-header{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.75rem 2rem;
+	background-color: #353535; 
+}
+
+.logo img{
+	width: 10rem;
+}
+
+nav ul{
+	display: flex;
+	gap: 1.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
