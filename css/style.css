@@ -24,21 +24,23 @@ h1, h2, h3{
 
 
 h1{
-    font-size: 36px;
+    font-size: 3rem;
+	letter-spacing: 0.02em;
 }
 h2{
-    font-size: 30px;
+    font-size: 2rem;
 }
 h3{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 p{
-    font-size: 16px;
+    max-width: 40rem; 
+	word-spacing: 0.05em;
 }
 
 a{
-    color: inherit;
+    color: #deec46;
     text-decoration: none;
 }
 
@@ -46,6 +48,13 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+a:active, a:focus {
+	outline-color: #e5f06b;
+	outline-style: solid;
+	outline-width: 0.2rem;
+}
+
 
 
 
@@ -91,7 +100,7 @@ nav a.active {
 
 main {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr);
+	grid-template-columns: 1fr;
 	gap: 2rem;
 	align-content: start;
 	padding: 2rem;
@@ -99,8 +108,26 @@ main {
     margin: 0 auto;
 }
 
+.button {
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	color: #353535;
+	background-color: #deec46;
+	text-decoration: none;
+	font-weight: 700;
+	border-color: #deec46;
+	border-style: solid;
+	border-width: 0.125rem;
+}
+
+.button:hover {
+	color: #deec46; 
+	background-color: #353535;
+	border-color: #deec46;
+}
+
 main.home {
-	grid-template-columns: minmax(2rem, 1fr) minmax(0, 70rem) minmax(2rem, 1fr);
+	grid-template-columns: 1fr 10fr 1fr;
 	gap: 2rem 0;
 	width: 100%; 
 	max-width: none;
@@ -112,6 +139,41 @@ main.home > section {
 	grid-column: 2;
 }
 
+main.home > .hero {
+	grid-column: 1 / -1; 
+	display: grid;
+	grid-template-columns: 3fr 5fr 3fr 3fr;
+    grid-template-rows: 1fr auto auto 1fr;
+	align-content: center;
+	justify-items: start;
+	min-height: 85vh;
+	background-color: #2a2a2a;
+	background-image: linear-gradient(to bottom, rgba(42, 42, 42, 0) 55%, #2a2a2a 100%), linear-gradient(to right, rgba(42, 42, 42, 0.85), rgba(42, 42, 42, 0.6)), url("../img/hero.jpg");
+	background-size: cover;
+}
+
+.hero > h1{
+	grid-column: 2;
+	grid-row: 1;
+    align-self: end;
+}
+
+.hero .tagline {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.hero .button {
+	grid-column: 3;
+	grid-row: 3;
+	justify-self: end;
+	align-self: end;
+}
+
+.tagline {
+	font-size: 1.25rem;
+	letter-spacing: 0.1em;
+}
 
 
 .detail {
