@@ -2,4 +2,4 @@ Student name: Tom Cook
 Student number: 763602
 Student class: your class
 GitHub Repository: https://github.com/tomcook2006/web-markup-final-project
-GitHub Pages URL: your github pages URL
+GitHub Pages URL: https://tomcook2006.github.io/web-markup-final-project/
